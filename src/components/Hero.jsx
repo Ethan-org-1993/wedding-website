@@ -12,19 +12,18 @@ export default function Hero() {
         </svg>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 pt-28 pb-24 text-center">
+      <div className="max-w-4xl mx-auto px-6 pt-32 pb-24 text-center">
         <p className="uppercase tracking-[0.3em] text-sm text-ink/70 fade-in">12 June 2027</p>
-        <h1 className="mt-4 font-display text-5xl sm:text-6xl font-semibold fade-in">Phoebe <span className="text-ink/40">&</span> Ethan</h1>
+        <h1 className="mt-4 font-display text-6xl sm:text-7xl md:text-8xl font-semibold fade-in">Phoebe <span className="text-ink/40">&</span> Ethan</h1>
         <p className="mt-6 text-ink/75 fade-in">
-          We’re so excited to celebrate with you in West Sussex.
+          We're so excited to celebrate with you in West Sussex.
         </p>
-        <div className="mt-10 inline-flex items-center gap-3 bg-white/70 backdrop-blur px-5 py-3 rounded-2xl shadow-soft fade-in">
-          <a href="#details" className="underline underline-offset-4">Event Details</a>
-          <span aria-hidden="true">·</span>
-          <a href="#rsvp" className="underline underline-offset-4">RSVP</a>
-        </div>
         <div className="mt-16 flex justify-center">
-          <img src="/hero-illustration.svg" alt="" className="w-[520px] max-w-full drop-shadow-sm" />
+          <img 
+            src="https://i.giphy.com/media/6ijcjAcSkEbKYkhGYB/giphy.gif" 
+            alt="Wedding celebration" 
+            className="w-[520px] max-w-full drop-shadow-sm" 
+          />
         </div>
       </div>
     </header>

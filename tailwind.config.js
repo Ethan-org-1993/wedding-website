@@ -11,8 +11,9 @@ export default {
         gold: "#BA9B6C"
       },
       fontFamily: {
-        display: ["Playfair Display", "serif"],
-        sans: ["Inter", "system-ui", "sans-serif"]
+        display: ["SS Bruney", "Georgia", "Times New Roman", "serif"],
+        sans: ["Loubag", "Georgia", "Times New Roman", "serif"],
+        subtitle: ["Vintage Rotter", "Georgia", "Times New Roman", "serif"],
       },
       boxShadow: {
         soft: "0 10px 30px rgba(0,0,0,0.06)"

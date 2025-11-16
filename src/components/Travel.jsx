@@ -3,7 +3,7 @@ import React from 'react'
 export default function Travel() {
   return (
     <div id="travel" className="fade-in">
-      <h2 className="font-display text-3xl font-semibold mb-8">Travel & Stay</h2>
+      <h2 className="font-subtitle text-3xl font-semibold mb-8">Travel & Stay</h2>
       <div className="space-y-4 text-ink/85">
         <p>
           We’ll add suggested hotels, taxi info, and local tips here.
