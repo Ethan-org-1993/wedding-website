@@ -13,18 +13,20 @@ export default function Hero() {
       </div>
 
       <div className="max-w-4xl mx-auto px-6 pt-32 pb-24 text-center">
-        <p className="uppercase tracking-[0.3em] text-sm text-ink/70 fade-in">12 June 2027</p>
-        <h1 className="mt-4 font-display text-6xl sm:text-7xl md:text-8xl font-semibold fade-in">Phoebe <span className="text-ink/40">&</span> Ethan</h1>
-        <p className="mt-6 text-ink/75 fade-in">
-          We're so excited to celebrate with you in West Sussex.
-        </p>
-        <div className="mt-3 flex justify-center">
+        <div className="flex justify-center mb-6 fade-in">
           <img 
             src="/images/wedding-gif.gif" 
             alt="Wedding celebration" 
             className="w-[390px] max-w-full drop-shadow-sm" 
           />
         </div>
+        <h1 className="relative -mt-12 inline-block font-display text-6xl sm:text-7xl md:text-8xl font-semibold fade-in">
+          Phoebe <span className="text-ink/40">&</span> Ethan
+        </h1>
+        <p className="mt-3 uppercase tracking-[0.3em] text-sm text-ink/70 fade-in">12 June 2027</p>
+        <p className="mt-6 text-ink/75 fade-in">
+          We're so excited to celebrate with you in West Sussex.
+        </p>
       </div>
     </header>
   )
