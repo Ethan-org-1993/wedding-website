@@ -18,11 +18,11 @@ export default function Hero() {
         <p className="mt-6 text-ink/75 fade-in">
           We're so excited to celebrate with you in West Sussex.
         </p>
-        <div className="mt-16 flex justify-center">
+        <div className="mt-3 flex justify-center">
           <img 
-            src="https://i.giphy.com/media/6ijcjAcSkEbKYkhGYB/giphy.gif" 
+            src="/images/wedding-gif.gif" 
             alt="Wedding celebration" 
-            className="w-[520px] max-w-full drop-shadow-sm" 
+            className="w-[390px] max-w-full drop-shadow-sm" 
           />
         </div>
       </div>
