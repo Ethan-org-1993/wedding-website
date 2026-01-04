@@ -2,29 +2,31 @@ import React from 'react'
 
 export default function Hero() {
   return (
-    <header className="relative overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-        <svg className="absolute -top-10 -right-10 opacity-25" width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="160" cy="160" r="160" fill="#E9D8D2"/>
-        </svg>
-        <svg className="absolute -bottom-16 -left-16 opacity-30" width="380" height="380" viewBox="0 0 380 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="190" cy="190" r="190" fill="#DCE5E1"/>
-        </svg>
-      </div>
-
-      <div className="max-w-4xl mx-auto px-6 pt-32 pb-24 text-center">
+    <header className="relative overflow-visible">
+      <div className="max-w-5xl mx-auto px-6 pt-32 pb-24 text-center">
         <div className="flex justify-center mb-6 fade-in">
           <img 
             src="/images/wedding-gif.gif" 
             alt="Wedding celebration" 
-            className="w-[390px] max-w-full drop-shadow-sm" 
+            className="w-[390px] max-w-full rounded-[14px] drop-shadow-sm" 
           />
         </div>
-        <h1 className="relative -mt-12 inline-block font-display text-6xl sm:text-7xl md:text-8xl font-semibold fade-in">
-          Phoebe <span className="text-ink/40">&</span> Ethan
-        </h1>
-        <p className="mt-3 uppercase tracking-[0.3em] text-sm text-ink/70 fade-in">12 June 2027</p>
-        <p className="mt-6 text-ink/75 fade-in">
+        <div className="relative -mt-12 mb-0 flex justify-center fade-in">
+          <svg viewBox="0 0 760 120" className="w-full max-w-[760px]">
+            <defs>
+              <path id="heroCurve" d="M20 40 Q380 160 740 40" />
+            </defs>
+            <text className="font-display text-5xl sm:text-6xl md:text-7xl font-semibold fill-current text-ink drop-shadow-sm">
+              <textPath href="#heroCurve" startOffset="50%" textAnchor="middle">
+                Phoebe &amp; Ethan
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        <p className="mt-1 uppercase tracking-[0.3em] text-sm text-ink/70 fade-in">
+          12<sup className="align-super text-[0.65em] ml-[2px]">th</sup> June 2027
+        </p>
+        <p className="mt-3 text-ink/75 fade-in">
           We're so excited to celebrate with you in West Sussex.
         </p>
       </div>

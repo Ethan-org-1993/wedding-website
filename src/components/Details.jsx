@@ -58,7 +58,10 @@ export default function Details() {
 
 function Card({ title, place, time, children, mapUrl }) {
   return (
-    <div className="bg-white/70 rounded-2xl p-6 shadow-soft">
+    <div
+      className="rounded-2xl p-6 shadow-soft text-ink"
+      style={{ backgroundColor: 'rgba(196, 209, 184, 0.4)' }}
+    >
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="font-subtitle text-2xl font-semibold">{title}</h3>
         <a className="text-sm underline underline-offset-4" target="_blank" rel="noreferrer" href={mapUrl}>Open map</a>
