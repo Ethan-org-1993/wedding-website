@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Navigation from './components/Navigation.jsx'
 import HomePage from './components/HomePage.jsx'
 import Travel from './components/Travel.jsx'
-import Gifts from './components/Gifts.jsx'
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home')
@@ -15,12 +14,6 @@ export default function App() {
         return (
           <main className="pt-24">
             <Section><Travel /></Section>
-          </main>
-        )
-      case 'gifts':
-        return (
-          <main className="pt-24">
-            <Section><Gifts /></Section>
           </main>
         )
       default:

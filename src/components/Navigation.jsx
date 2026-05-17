@@ -3,8 +3,7 @@ import React from 'react'
 export default function Navigation({ currentPage, setCurrentPage }) {
   const menuItems = [
     { id: 'details', label: 'The Details', scroll: true },
-    { id: 'travel', label: 'Travel', scroll: false },
-    { id: 'gifts', label: 'Gifts', scroll: false },
+    { id: 'travel', label: 'Travel & Stay', scroll: false },
   ]
 
   const handleMenuClick = (item) => {
@@ -20,11 +19,6 @@ export default function Navigation({ currentPage, setCurrentPage }) {
     } else {
       setCurrentPage(item.id)
     }
-  }
-
-  const handleRSVPClick = () => {
-    const joyUrl = "https://withjoy.com/phoebe-and-ethan"
-    window.open(joyUrl, '_blank', 'noopener,noreferrer')
   }
 
   return (
@@ -58,21 +52,8 @@ export default function Navigation({ currentPage, setCurrentPage }) {
           </button>
         </div>
 
-        {/* Right: RSVP */}
-        <div>
-          <button
-            onClick={handleRSVPClick}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-ink text-white hover:bg-ink/90 transition-colors"
-            aria-label="RSVP"
-          >
-            <img
-              src="/images/love-letter.png"
-              alt=""
-              className="h-5 w-5 object-contain brightness-0 invert"
-            />
-            <span className="text-sm font-medium">RSVP</span>
-          </button>
-        </div>
+        {/* Spacer to balance the monogram centering */}
+        <div className="invisible">placeholder</div>
       </div>
     </nav>
   )
