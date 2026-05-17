@@ -4,6 +4,8 @@ import Details from './Details.jsx'
 import Footer from './Footer.jsx'
 
 export default function HomePage() {
+  const joyUrl = "https://withjoy.com/phoebe-and-ethan"
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
@@ -18,6 +20,20 @@ export default function HomePage() {
           </div>
         </section>
         
+        {/* RSVP Button Section */}
+        <section className="max-w-3xl mx-auto px-6 pb-16">
+          <div className="text-center">
+            <a
+              href={joyUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-block px-6 py-3 rounded-2xl bg-ink text-white shadow-soft hover:bg-ink/90 transition-colors"
+            >
+              RSVP
+            </a>
+          </div>
+        </section>
+
         {/* Scroll to Top Arrow */}
         <div className="max-w-3xl mx-auto px-6 pb-8 flex justify-center">
           <button
