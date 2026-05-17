@@ -19,10 +19,9 @@ export default function Details() {
             <Card
               title="Ceremony"
               place="Saint Anthony & Saint George, Duncton"
-              time="Arrive from 13.30 • Service at 14.00"
+              time="More details to follow"
               mapUrl="https://maps.google.com/?q=Saint+Anthony+%26+Saint+George,+Duncton"
             >
-              Parking available nearby. Please be seated 10 minutes before the ceremony.
             </Card>
           </div>
         </div>
@@ -40,7 +39,6 @@ export default function Details() {
             <Card
               title="Reception"
               place="Architectural Plants, Billingshurst"
-              time="Drinks from 16.00 • Dinner at 18.00"
               mapUrl="https://maps.google.com/?q=Architectural+Plants,+Billingshurst"
             >
               Join us for cocktails, dinner, and dancing among the greenery.
@@ -49,7 +47,7 @@ export default function Details() {
         </div>
 
         <div className="mt-8 text-ink/70 text-sm">
-          Dress code guidance and more details will be added closer to the date.
+          More details to follow soon!
         </div>
       </div>
     </div>
