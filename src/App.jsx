@@ -36,11 +36,12 @@ export default function App() {
   )
 }
 
-function Section({ children, divider }) {
+function Section({ children }) {
   return (
     <section className="max-w-3xl mx-auto px-6 py-16">
-      {divider && <hr className="border-blush/50 mb-16" />}
-      {children}
+      <div className="bg-linen rounded-2xl shadow-soft p-8">
+        {children}
+      </div>
     </section>
   )
 }

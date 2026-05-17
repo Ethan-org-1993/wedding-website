@@ -19,7 +19,7 @@ export default function Details() {
             <Card
               title="Ceremony"
               place="Saint Anthony & Saint George, Duncton"
-              time="Arrive from 13:30 • Service at 14:00"
+              time="Arrive from 13.30 • Service at 14.00"
               mapUrl="https://maps.google.com/?q=Saint+Anthony+%26+Saint+George,+Duncton"
             >
               Parking available nearby. Please be seated 10 minutes before the ceremony.
@@ -40,7 +40,7 @@ export default function Details() {
             <Card
               title="Reception"
               place="Architectural Plants, Billingshurst"
-              time="Drinks from 16:00 • Dinner at 18:00"
+              time="Drinks from 16.00 • Dinner at 18.00"
               mapUrl="https://maps.google.com/?q=Architectural+Plants,+Billingshurst"
             >
               Join us for cocktails, dinner, and dancing among the greenery.
@@ -58,10 +58,7 @@ export default function Details() {
 
 function Card({ title, place, time, children, mapUrl }) {
   return (
-    <div
-      className="rounded-2xl p-6 shadow-soft text-ink"
-      style={{ backgroundColor: 'rgba(196, 209, 184, 0.4)' }}
-    >
+    <div className="p-6 text-ink">
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="font-subtitle text-2xl font-semibold">{title}</h3>
         <a className="text-sm underline underline-offset-4" target="_blank" rel="noreferrer" href={mapUrl}>Open map</a>

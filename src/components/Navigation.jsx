@@ -29,14 +29,14 @@ export default function Navigation({ currentPage, setCurrentPage }) {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-blush/20">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Left side menu buttons */}
+      <div className="relative max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+        {/* Left: menu items */}
         <div className="flex items-center gap-6">
           {menuItems.map((item) => (
             <button
               key={item.id}
               onClick={() => handleMenuClick(item)}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-base font-medium transition-colors ${
                 currentPage === item.id || (item.scroll && currentPage === 'home')
                   ? 'text-ink underline underline-offset-4'
                   : 'text-ink/70 hover:text-ink'
@@ -47,19 +47,32 @@ export default function Navigation({ currentPage, setCurrentPage }) {
           ))}
         </div>
 
-        {/* Right side RSVP button */}
-        <button
-          onClick={handleRSVPClick}
-          className="flex items-center gap-2 px-4 py-2 rounded-full bg-ink text-white hover:bg-ink/90 transition-colors"
-          aria-label="RSVP"
-        >
-          <img 
-            src="/images/love-letter.png" 
-            alt="RSVP" 
-            className="h-5 w-5 object-contain brightness-0 invert"
-          />
-          <span className="text-sm font-medium">RSVP</span>
-        </button>
+        {/* Centre: monogram — absolutely centred so it doesn't affect flex spacing */}
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <button onClick={() => setCurrentPage('home')} aria-label="Home">
+            <img
+              src="/images/pe-monogram.png"
+              alt="P & E"
+              className="h-12 w-auto object-contain"
+            />
+          </button>
+        </div>
+
+        {/* Right: RSVP */}
+        <div>
+          <button
+            onClick={handleRSVPClick}
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-ink text-white hover:bg-ink/90 transition-colors"
+            aria-label="RSVP"
+          >
+            <img
+              src="/images/love-letter.png"
+              alt=""
+              className="h-5 w-5 object-contain brightness-0 invert"
+            />
+            <span className="text-sm font-medium">RSVP</span>
+          </button>
+        </div>
       </div>
     </nav>
   )

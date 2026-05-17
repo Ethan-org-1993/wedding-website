@@ -15,7 +15,9 @@ export default function HomePage() {
       <Hero />
       <main>
         <section id="details-section" className="max-w-3xl mx-auto px-6 py-16">
-          <Details />
+          <div className="bg-linen rounded-2xl shadow-soft p-8">
+            <Details />
+          </div>
         </section>
         
         {/* RSVP Button Section */}
