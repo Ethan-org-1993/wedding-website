@@ -46,7 +46,7 @@ export default function Details() {
           </div>
         </div>
 
-        <div className="mt-8 text-ink/70 text-sm">
+        <div className="mt-8 text-ink/70 text-xl">
           More details to follow soon!
         </div>
       </div>
@@ -61,9 +61,9 @@ function Card({ title, place, time, children, mapUrl }) {
         <h3 className="font-subtitle text-2xl font-semibold">{title}</h3>
         <a className="text-sm underline underline-offset-4" target="_blank" rel="noreferrer" href={mapUrl}>Open map</a>
       </div>
-      <p className="mt-2 font-medium">{place}</p>
-      <p className="mt-1 text-ink/70">{time}</p>
-      <p className="mt-4 text-ink/80">{children}</p>
+      <p className="mt-2 text-xl font-medium">{place}</p>
+      <p className="mt-1 text-xl text-ink/70">{time}</p>
+      <p className="mt-4 text-xl text-ink/80">{children}</p>
     </div>
   )
 }
