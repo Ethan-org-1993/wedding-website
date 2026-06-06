@@ -21,13 +21,13 @@ export default function HomePage() {
             <img
               src="/images/trees.png"
               alt=""
-              className="absolute bottom-0 left-0 w-28 -translate-x-1/2 pointer-events-none select-none"
+              className="absolute bottom-0 left-0 w-[168px] -translate-x-1/2 pointer-events-none select-none"
             />
             {/* Right tree (mirrored) */}
             <img
               src="/images/trees.png"
               alt=""
-              className="absolute bottom-0 right-0 w-28 pointer-events-none select-none"
+              className="absolute bottom-0 right-0 w-[168px] pointer-events-none select-none"
               style={{ transform: 'translateX(50%) scaleX(-1)' }}
             />
           </div>
