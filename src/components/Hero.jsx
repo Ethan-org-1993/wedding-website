@@ -14,12 +14,18 @@ export default function Hero() {
             <img src="/images/pe-monogram.png" alt="P & E" className="w-[120px] h-[120px] object-contain" />
           </div>
         </div>
-        <div className="relative -mt-12 mb-0 flex justify-center fade-in">
+        {/* Mobile: plain large heading */}
+        <h1 className="md:hidden font-display text-6xl font-semibold text-ink text-center mt-4 fade-in">
+          Phoebe &amp; Ethan
+        </h1>
+
+        {/* Desktop: curved SVG text */}
+        <div className="hidden md:flex relative -mt-12 mb-0 justify-center fade-in">
           <svg viewBox="0 0 760 120" className="w-full max-w-[760px]">
             <defs>
               <path id="heroCurve" d="M20 40 Q380 160 740 40" />
             </defs>
-            <text className="font-display text-5xl sm:text-6xl md:text-7xl font-semibold fill-current text-ink drop-shadow-sm">
+            <text className="font-display text-7xl font-semibold fill-current text-ink drop-shadow-sm">
               <textPath href="#heroCurve" startOffset="50%" textAnchor="middle">
                 Phoebe &amp; Ethan
               </textPath>
