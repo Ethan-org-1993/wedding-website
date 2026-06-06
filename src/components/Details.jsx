@@ -46,7 +46,7 @@ export default function Details() {
           </div>
         </div>
 
-        <div className="mt-8 text-ink/70 text-xl">
+        <div className="mt-8 text-ink/70 text-xl text-center">
           More details to follow soon!
         </div>
       </div>

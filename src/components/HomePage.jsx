@@ -15,8 +15,23 @@ export default function HomePage() {
       <Hero />
       <main>
         <section id="details-section" className="max-w-3xl mx-auto px-6 py-16">
-          <div className="bg-linen rounded-2xl shadow-soft p-8">
-            <Details />
+          <div className="relative">
+            <div className="bg-linen rounded-2xl shadow-soft p-8">
+              <Details />
+            </div>
+            {/* Left tree */}
+            <img
+              src="/images/trees.png"
+              alt=""
+              className="absolute bottom-0 left-0 w-[168px] -translate-x-1/2 pointer-events-none select-none"
+            />
+            {/* Right tree (mirrored) */}
+            <img
+              src="/images/trees.png"
+              alt=""
+              className="absolute bottom-0 right-0 w-[168px] pointer-events-none select-none"
+              style={{ transform: 'translateX(50%) scaleX(-1)' }}
+            />
           </div>
         </section>
         
