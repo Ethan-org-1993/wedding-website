@@ -21,6 +21,9 @@ export default function Travel() {
         <p className="text-xl text-ink/80 mb-6">
           Aside from the hotels below, there are also lots of AirBnB / self-catered properties available in the local area.
         </p>
+        <p className="text-xl italic text-ink/80 mb-6">
+          With the exception of babes in arms, we've chosen to make our wedding an adults-only celebration. We hope you understand and can enjoy the day off with us.
+        </p>
         <div className="space-y-3">
           {hotels.map((hotel) => (
             <div key={hotel.name} className="flex items-baseline gap-2">
