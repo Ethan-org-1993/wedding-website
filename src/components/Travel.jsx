@@ -3,10 +3,14 @@ import React from 'react'
 const hotels = [
   { name: 'The Stonemasons Inn', location: 'Petworth', url: 'https://www.stonemasonspetworth.co.uk/' },
   { name: 'Badgers', location: 'Petworth', url: 'https://badgerspetworth.co.uk/' },
+  { name: 'The Angel Inn', location: 'Petworth', url: 'https://angelinnpetworth.co.uk/' },
+  { name: 'The Welldiggers Arms', location: 'Petworth', url: 'https://butcombe.com/the-welldiggers-arms-west-sussex/' },
+  { name: 'The Old Railway Station', location: 'Petworth', url: 'https://www.old-station.co.uk/' },
   { name: 'The Kings Head Inn', location: 'Billingshurst', url: 'https://thekingsheadinn.pub/' },
   { name: 'Travelodge', location: 'Billingshurst', url: 'https://www.travelodge.co.uk/hotels/13/billingshurst-five-oaks-hotel' },
-  { name: 'The Swann Inn', location: 'Fittleworth', url: 'http://www.swaninnfittleworth.com/', note: '2 night minimum stay' },
+  { name: 'The Swan Inn', location: 'Fittleworth', url: 'http://www.swaninnfittleworth.com/', note: '2 night minimum stay' },
   { name: 'The Sportsman Inn', location: 'Amberley', url: 'https://thesportsmansussex.co.uk/' },
+  { name: 'The Labouring Man', location: 'Coldwaltham', url: 'https://www.labouringman.com/' },
 ]
 
 export default function Travel() {
