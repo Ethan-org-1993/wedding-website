@@ -2,9 +2,16 @@ import React, { useState } from 'react'
 import Navigation from './components/Navigation.jsx'
 import HomePage from './components/HomePage.jsx'
 import Travel from './components/Travel.jsx'
+import Gifts from './components/Gifts.jsx'
+import PasswordGate, { isUnlocked } from './components/PasswordGate.jsx'
 
 export default function App() {
+  const [unlocked, setUnlocked] = useState(isUnlocked)
   const [currentPage, setCurrentPage] = useState('home')
+
+  if (!unlocked) {
+    return <PasswordGate onUnlock={() => setUnlocked(true)} />
+  }
 
   const renderPage = () => {
     switch (currentPage) {
@@ -14,6 +21,12 @@ export default function App() {
         return (
           <main className="pt-24">
             <Section><Travel /></Section>
+          </main>
+        )
+      case 'gifts':
+        return (
+          <main className="pt-24">
+            <Section><Gifts /></Section>
           </main>
         )
       default:
