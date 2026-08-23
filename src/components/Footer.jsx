@@ -13,7 +13,6 @@ export default function Footer() {
         </a>
       </p>
       <p>© {new Date().getFullYear()} Phoebe &amp; Ethan</p>
-      <p className="mt-2">Made with love • 12 June 2027</p>
     </footer>
   )
 }
