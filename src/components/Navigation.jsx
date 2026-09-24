@@ -23,8 +23,7 @@ export default function Navigation({ currentPage, setCurrentPage }) {
   }
 
   const handleRSVPClick = () => {
-    const joyUrl = "https://withjoy.com/phoebe-and-ethan"
-    window.open(joyUrl, '_blank', 'noopener,noreferrer')
+    setCurrentPage('rsvp')
   }
 
   return (

@@ -3,6 +3,7 @@ import Navigation from './components/Navigation.jsx'
 import HomePage from './components/HomePage.jsx'
 import Travel from './components/Travel.jsx'
 import Gifts from './components/Gifts.jsx'
+import RSVP from './components/RSVP.jsx'
 import PasswordGate, { isUnlocked } from './components/PasswordGate.jsx'
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
-        return <HomePage />
+        return <HomePage setCurrentPage={setCurrentPage} />
       case 'travel':
         return (
           <main className="pt-24">
@@ -27,6 +28,12 @@ export default function App() {
         return (
           <main className="pt-24">
             <Section><Gifts /></Section>
+          </main>
+        )
+      case 'rsvp':
+        return (
+          <main className="pt-24">
+            <Section><RSVP /></Section>
           </main>
         )
       default:
