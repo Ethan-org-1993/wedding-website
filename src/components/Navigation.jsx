@@ -5,6 +5,7 @@ export default function Navigation({ currentPage, setCurrentPage }) {
     { id: 'details', label: 'The Details', scroll: true },
     { id: 'travel', label: 'Travel & Stay', scroll: false },
     { id: 'gifts', label: 'Gifts', scroll: false },
+    { id: 'faq', label: 'FAQ', scroll: false },
   ]
 
   const handleMenuClick = (item) => {

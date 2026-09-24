@@ -4,6 +4,7 @@ import HomePage from './components/HomePage.jsx'
 import Travel from './components/Travel.jsx'
 import Gifts from './components/Gifts.jsx'
 import RSVP from './components/RSVP.jsx'
+import FAQ from './components/FAQ.jsx'
 import PasswordGate, { isUnlocked } from './components/PasswordGate.jsx'
 
 export default function App() {
@@ -34,6 +35,12 @@ export default function App() {
         return (
           <main className="pt-24">
             <Section><RSVP /></Section>
+          </main>
+        )
+      case 'faq':
+        return (
+          <main className="pt-24">
+            <Section><FAQ /></Section>
           </main>
         )
       default:
