@@ -44,7 +44,7 @@ export default function Travel() {
       <div>
         <h2 className="font-subtitle text-3xl font-semibold mb-4">Travel</h2>
         <p className="text-xl text-ink/80">
-          Plenty of parking is available at the Church and Architectural Plants.
+          Plenty of parking is available at the Church and Architectural Plants, you are welcome to leave your car at Architectural Plants and collect it on Sunday morning before 11am.
         </p>
         <p className="mt-4 text-xl text-ink/60">More details coming soon…</p>
       </div>
