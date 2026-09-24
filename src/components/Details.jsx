@@ -19,7 +19,7 @@ export default function Details() {
             <Card
               title="Ceremony"
               place="Saint Anthony & Saint George, Duncton"
-              time="More details to follow"
+
               mapUrl="https://maps.google.com/?q=Saint+Anthony+%26+Saint+George,+Duncton"
             >
             </Card>
