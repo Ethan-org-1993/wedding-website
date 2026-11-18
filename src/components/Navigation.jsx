@@ -4,6 +4,7 @@ export default function Navigation({ currentPage, setCurrentPage }) {
   const menuItems = [
     { id: 'details', label: 'The Details', scroll: true },
     { id: 'travel', label: 'Travel & Stay', scroll: false },
+    { id: 'events', label: 'Events', scroll: false },
   ]
 
   const handleMenuClick = (item) => {
